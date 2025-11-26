@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Super Fun Page!</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #f0f8ff 60%, #ffe4e1 100%);
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            padding-top: 40px;
+        }
+        h1 {
+            color: #ff6347;
+            font-size: 3em;
+            margin-bottom: 0.2em;
+        }
+        .emoji {
+            font-size: 4em;
+            margin: 0.5em 0;
+        }
+        .joke {
+            background: #fffbe7;
+            border: 2px dashed #ffb347;
+            border-radius: 10px;
+            display: inline-block;
+            padding: 1em 2em;
+            margin: 1em auto;
+            font-size: 1.2em;
+            max-width: 600px;
+        }
+        .meme {
+            margin: 2em auto;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #aaa;
+        }
+        .fun-btn {
+            padding: 12px 28px;
+            font-size: 1.2em;
+            background: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 1em;
+        }
+        .fun-btn:hover {
+            background: #ff6347;
+        }
+        .pun {
+            color: #008080;
+            font-style: italic;
+            margin: 1em 0;
+        }
+        .animal {
+            font-size: 2em;
+            margin: 0.5em;
+        }
+    </style>
+    <script>
+        function showRandomJoke() {
+            const jokes = [
+                "Why don’t scientists trust atoms? Because they make up everything!",
+                "Parallel lines have so much in common. It’s a shame they’ll never meet.",
+                "Why did the scarecrow win an award? Because he was outstanding in his field!",
+                "I told my computer I needed a break, and now it won’t stop sending me KitKats.",
+                "Why did the math book look sad? Because it had too many problems.",
+                "What do you call fake spaghetti? An impasta!"
+            ];
+            const idx = Math.floor(Math.random() * jokes.length);
+            document.getElementById('joke-box').innerText = jokes[idx];
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to the Super Fun Page!</h1>
+    <div class="emoji">😂🤣😜🤪😹</div>
+    <div class="animal">🐶 🐱 🦄 🐸 🐧 🐢 🐒 🦖</div>
+    <div class="joke" id="joke-box">Why don’t scientists trust atoms? Because they make up everything!</div>
+    <button class="fun-btn" onclick="showRandomJoke()">Tell Me Another Joke!</button>
+    <div class="pun">I would tell you a joke about pizza, but it’s a little cheesy.</div>
+    <img class="meme" src="https://i.imgflip.com/30b1gx.jpg" alt="Funny Meme">
+    <div class="joke">Why did the chicken join a band? Because it had the drumsticks!</div>
+    <div class="pun">I’m reading a book about anti-gravity. It’s impossible to put down!</div>
+    <div class="emoji">🥳🎉🦄🍕🍦</div>
+    <div class="joke">Knock knock!<br>Who’s there?<br>Interrupting cow.<br>Interrupting cow wh—<br>MOO!</div>
+    <div class="pun">Did you hear about the claustrophobic astronaut? He just needed a little space.</div>
+    <div class="joke">Why don’t programmers like nature? It has too many bugs.</div>
+    <div class="emoji">😹😹😹</div>
+</body>
+</html>

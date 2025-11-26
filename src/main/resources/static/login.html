@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - JWT Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f8ff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .login-container {
+            background: #fff;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #aaa;
+            width: 300px;
+        }
+        h2 {
+            color: #4caf50;
+            margin-bottom: 1em;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 0.7em;
+            background: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #388e3c;
+        }
+        .message {
+            margin-top: 1em;
+            color: #d32f2f;
+        }
+        .jwt {
+            margin-top: 1em;
+            word-break: break-all;
+            background: #e0f7fa;
+            padding: 1em;
+            border-radius: 5px;
+            color: #00695c;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required />
+            <input type="password" id="password" placeholder="Password" required />
+            <button type="submit">Login</button>
+        </form>
+        <div class="message" id="message"></div>
+        <div class="jwt" id="jwt"></div>
+    </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            document.getElementById('message').textContent = '';
+            document.getElementById('jwt').textContent = '';
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            try {
+                const response = await fetch('/auth/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ email: username, password: password })
+                });
+                const result = await response.text();
+                if (response.ok && result === 'Login successful') {
+                    window.location.href = '/welcome.html';
+                } else {
+                    document.getElementById('message').textContent = result;
+                }
+            } catch (err) {
+                document.getElementById('message').textContent = 'Network error.';
+            }
+        });
+    </script>
+</body>
+</html>
