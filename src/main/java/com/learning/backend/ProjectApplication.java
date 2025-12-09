@@ -33,8 +33,4 @@ public class ProjectApplication {
 		dataSource.setPoolName("ProjectHikariCP");
 		return dataSource;
 	}
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
 }

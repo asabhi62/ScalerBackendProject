@@ -25,7 +25,7 @@ public class SecurityConfig {
     @Autowired
     private JwtAuthenticationFilter jwtAuthenticationFilter;
 
-  //  @Bean
+    //  @Bean
     public CustomUserDetailsService userDetailsService() {
         return new CustomUserDetailsService();
     }
@@ -35,7 +35,7 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests((authorize) -> authorize
-                        .requestMatchers("/auth/signup", "/auth/login", "/login.html").permitAll()
+                        .requestMatchers("/profile/registerUser", "/auth/authenticateUser", "/auth/initiatePasswordReset", "/auth/completePasswordReset", "/login.html").permitAll()
                         .anyRequest().authenticated()
                 )
                 .exceptionHandling(exception -> exception

@@ -2,6 +2,7 @@ package com.learning.backend.authentication.services;
 
 import com.learning.backend.authentication.entities.Role;
 import com.learning.backend.authentication.entities.Session;
+import com.learning.backend.authentication.entities.SessionStatus;
 import com.learning.backend.authentication.entities.User;
 import com.learning.backend.authentication.models.UserInfo;
 import com.learning.backend.authentication.repository.RoleRepository;
@@ -20,6 +21,7 @@ import java.time.ZoneOffset;
 import java.time.temporal.TemporalAmount;
 import java.util.Arrays;
 import java.util.Base64;
+import java.util.Date;
 import java.util.List;
 
 import static com.learning.backend.authentication.services.AESEncyptionService.encrypt;
@@ -112,8 +114,14 @@ public class AuthenticationService {
     }
 
     public void createSession(UserInfo userInfo, String token) {
-        sessionRepository.save(new Session(token, userInfo.getUserId(), userInfo.getIPAddress(),
-                userInfo.getDeviceInfo(), LocalDateTime.now().plus(1, MONTHS).toEpochSecond(ZoneOffset.of("+05:30"))));
+        User user = userRepository.findById(userInfo.getUserId()).orElseThrow(() -> new RuntimeException("User not found"));
+        java.sql.Timestamp expiringAt = java.sql.Timestamp.valueOf(LocalDateTime.now().plus(1, MONTHS));
+        Session session = new Session();
+        session.setToken(token);
+        session.setUser(user);
+        session.setExpiringAt(expiringAt);
+        session.setSessionStatus(SessionStatus.ACTIVE);
+        sessionRepository.save(session);
     }
 
     public void invalidateSession(Long sessionId) {

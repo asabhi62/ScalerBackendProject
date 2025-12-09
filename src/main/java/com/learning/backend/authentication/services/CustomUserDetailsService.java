@@ -13,6 +13,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class CustomUserDetailsService implements UserDetailsService {
 
     @Autowired
