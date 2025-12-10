@@ -1,4 +1,4 @@
-package com.learning.backend.config;
+package com.learning.backend.authentication.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

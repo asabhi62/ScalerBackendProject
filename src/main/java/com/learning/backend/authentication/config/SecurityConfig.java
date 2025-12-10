@@ -1,4 +1,4 @@
-package com.learning.backend.config;
+package com.learning.backend.authentication.config;
 
 import com.learning.backend.authentication.services.CustomUserDetailsService;
 import com.learning.backend.authentication.services.JwtAuthenticationFilter;
@@ -35,7 +35,7 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests((authorize) -> authorize
-                        .requestMatchers("/profile/registerUser", "/auth/authenticateUser", "/auth/initiatePasswordReset", "/auth/completePasswordReset", "/login.html").permitAll()
+                        .requestMatchers("/profile/registerUser", "/auth/authenticateUser", "/auth/initiatePasswordReset", "/auth/completePasswordReset", "/login.html", "/hello").permitAll()
                         .anyRequest().authenticated()
                 )
                 .exceptionHandling(exception -> exception
