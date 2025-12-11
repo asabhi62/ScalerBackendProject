@@ -1,13 +1,19 @@
 package com.learning.backend.product.services.impl;
 
+import com.learning.backend.product.dtos.FilterDto;
 import com.learning.backend.product.dtos.ProductRequestDto;
 import com.learning.backend.product.dtos.ProductResponseDto;
 import com.learning.backend.product.entities.Category;
 import com.learning.backend.product.entities.Product;
+import com.learning.backend.product.enums.SortingCriteria;
 import com.learning.backend.product.repositories.CategoryRepository;
 import com.learning.backend.product.repositories.ProductRepository;
 import com.learning.backend.product.services.ProductService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -82,5 +88,27 @@ public class ProductServiceImpl implements ProductService {
 
         Product savedProduct = productRepository.save(existingProduct);
         return ProductResponseDto.from(savedProduct);
+    }
+
+    @Override
+    public Page<ProductResponseDto> search(String query, List<FilterDto> filters, SortingCriteria sortCriteria, Integer page, Integer size) {
+        Sort sort = Sort.unsorted();
+        if (sortCriteria != null) {
+            switch (sortCriteria) {
+                case PRICE_ASC:
+                    sort = Sort.by("price").ascending();
+                    break;
+                case PRICE_DESC:
+                    sort = Sort.by("price").descending();
+                    break;
+                case NEWEST_FIRST:
+                    sort = Sort.by("createdAt").descending(); // Assuming createdAt exists, or use id
+                    break;
+            }
+        }
+
+        Pageable pageable = PageRequest.of(page, size, sort);
+        Page<Product> products = productRepository.findByTitleContaining(query, pageable);
+        return products.map(ProductResponseDto::from);
     }
 }
