@@ -12,7 +12,7 @@ services:
 
   productservice:
     build:
-      context: ./ScalerBackendProject
+      context: ./ECommerceService
       dockerfile: docker/Dockerfile
     ports:
       - "8080:8080"

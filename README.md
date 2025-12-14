@@ -24,7 +24,7 @@ The project is structured into three main components:
 
 ```
 ScalerBackendProject/
-├── ScalerBackendProject/    # Main Product Service Application
+├── ECommerceService/        # Main Backend Application (Product, Cart, Auth, Payment)
 ├── ServiceRegistry/         # Eureka Server Application
 ├── DiscoveryClient/         # Sample Discovery Client
 ├── docker-compose.yml       # Docker orchestration
@@ -56,7 +56,7 @@ The easiest way to run the entire ecosystem is using Docker Compose.
     cd ..
 
     # Build Main Project
-    cd ScalerBackendProject
+    cd ECommerceService
     mvn clean package -DskipTests
     cd ..
     ```
@@ -90,7 +90,7 @@ If you prefer to run services locally without Docker Compose for the Java apps:
 3.  **Product Service**:
     Update `application.properties` to point to your local MySQL/Redis/Kafka if needed.
     ```bash
-    cd ScalerBackendProject
+    cd ECommerceService
     mvn spring-boot:run
     ```
     Access at: `http://localhost:8080`
