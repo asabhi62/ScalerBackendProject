@@ -1,0 +1,15 @@
+<mxfile host="app.diagrams.net" modified="2023-10-26T00:00:00.000Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="WzX" version="21.7.5" type="device">
+  <diagram id="orch" name="Elastic Beanstalk Orchestration">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+<mxCell id="cw" value="CloudWatch
+Monitoring" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=none;fontStyle=1;shadow=1;" vertex="1" parent="1"><mxGeometry x="50" y="150" width="120" height="80" as="geometry" /></mxCell><mxCell id="policy" value="Auto Scaling Policy
+(CPU > 60%)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=none;fontStyle=1;shadow=1;" vertex="1" parent="1"><mxGeometry x="250" y="150" width="150" height="80" as="geometry" /></mxCell><mxCell id="asg" value="Auto Scaling Group
+(+1 Instance)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=none;fontStyle=1;shadow=1;" vertex="1" parent="1"><mxGeometry x="500" y="150" width="150" height="80" as="geometry" /></mxCell><mxCell id="e_cw_policy" value="Trigger Alarm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" edge="1" parent="1" source="cw" target="policy"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="e_policy_asg" value="Execute Action" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" edge="1" parent="1" source="policy" target="asg"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="health" value="Health Check
+(/actuator/health)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=none;fontStyle=1;shadow=1;" vertex="1" parent="1"><mxGeometry x="50" y="300" width="150" height="60" as="geometry" /></mxCell><mxCell id="replace" value="Replace Unhealthy" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;exitX=1;exitY=0.5;dashed=1;" edge="1" parent="1" source="health" target="asg"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

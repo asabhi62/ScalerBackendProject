@@ -1,0 +1,107 @@
+<mxfile host="app.diagrams.net" modified="2023-10-26T00:00:00.000Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="WzX" version="21.7.5" type="device">
+  <diagram id="swot" name="Project SWOT">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="strength" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=none;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="300" height="200" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="strength_head" value="STRENGTHS (Key Takeaways)" style="text;html=1;strokeColor=none;fillColor=#82b366;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=1;fontColor=#ffffff;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="300" height="40" as="geometry" />
+        </mxCell>
+        
+            <mxCell id="strength_90" value="• Scalable Microservices Architecture" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+              <mxGeometry x="50" y="90" width="280" height="20" as="geometry" />
+            </mxCell>
+            
+            <mxCell id="strength_115" value="• High-Performance Caching (Redis)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+              <mxGeometry x="50" y="115" width="280" height="20" as="geometry" />
+            </mxCell>
+            
+            <mxCell id="strength_140" value="• Decoupled Event-Driven Design (Kafka)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+              <mxGeometry x="50" y="140" width="280" height="20" as="geometry" />
+            </mxCell>
+            
+            <mxCell id="strength_165" value="• Automated Deployment (AWS Beanstalk)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+              <mxGeometry x="50" y="165" width="280" height="20" as="geometry" />
+            </mxCell>
+            
+        <mxCell id="weakness" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=none;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="360" y="40" width="300" height="200" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="weakness_head" value="WEAKNESSES (Limitations)" style="text;html=1;strokeColor=none;fillColor=#b85450;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=1;fontColor=#ffffff;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="360" y="40" width="300" height="40" as="geometry" />
+        </mxCell>
+        
+            <mxCell id="weakness_90" value="• Increased Operational Complexity" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+              <mxGeometry x="370" y="90" width="280" height="20" as="geometry" />
+            </mxCell>
+            
+            <mxCell id="weakness_115" value="• Higher Cloud Infrastructure Costs" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+              <mxGeometry x="370" y="115" width="280" height="20" as="geometry" />
+            </mxCell>
+            
+            <mxCell id="weakness_140" value="• Debugging Distributed Transactions" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+              <mxGeometry x="370" y="140" width="280" height="20" as="geometry" />
+            </mxCell>
+            
+            <mxCell id="weakness_165" value="• Eventual Consistency Lag" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+              <mxGeometry x="370" y="165" width="280" height="20" as="geometry" />
+            </mxCell>
+            
+        <mxCell id="opps" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=none;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="260" width="300" height="200" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="opps_head" value="OPPORTUNITIES (Applications)" style="text;html=1;strokeColor=none;fillColor=#d6b656;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=1;fontColor=#ffffff;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="260" width="300" height="40" as="geometry" />
+        </mxCell>
+        
+            <mxCell id="opps_310" value="• Real-time Analytics Integration" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+              <mxGeometry x="50" y="310" width="280" height="20" as="geometry" />
+            </mxCell>
+            
+            <mxCell id="opps_335" value="• Serverless Cost Optimization" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+              <mxGeometry x="50" y="335" width="280" height="20" as="geometry" />
+            </mxCell>
+            
+            <mxCell id="opps_360" value="• Global Expansion via AWS Regions" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+              <mxGeometry x="50" y="360" width="280" height="20" as="geometry" />
+            </mxCell>
+            
+            <mxCell id="opps_385" value="• Mobile App Integration" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+              <mxGeometry x="50" y="385" width="280" height="20" as="geometry" />
+            </mxCell>
+            
+        <mxCell id="threats" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=none;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="360" y="260" width="300" height="200" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="threats_head" value="THREATS / CHALLENGES" style="text;html=1;strokeColor=none;fillColor=#9673a6;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=1;fontColor=#ffffff;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="360" y="260" width="300" height="40" as="geometry" />
+        </mxCell>
+        
+            <mxCell id="threats_310" value="• Data Consistency Race Conditions" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+              <mxGeometry x="370" y="310" width="280" height="20" as="geometry" />
+            </mxCell>
+            
+            <mxCell id="threats_335" value="• Vendor Lock-in (AWS Managed Services)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+              <mxGeometry x="370" y="335" width="280" height="20" as="geometry" />
+            </mxCell>
+            
+            <mxCell id="threats_360" value="• Network Latency Overhead" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+              <mxGeometry x="370" y="360" width="280" height="20" as="geometry" />
+            </mxCell>
+            
+            <mxCell id="threats_385" value="• Security Vulnerabilities" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+              <mxGeometry x="370" y="385" width="280" height="20" as="geometry" />
+            </mxCell>
+            
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

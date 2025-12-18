@@ -1,0 +1,11 @@
+<mxfile>
+  <diagram id="vpc" name="VPC Architecture">
+    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+<mxCell id="vpc" value="VPC (10.0.0.0/16)" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;startSize=30;" vertex="1" parent="1"><mxGeometry x="50" y="50" width="700" height="450" as="geometry" /></mxCell><mxCell id="pub" value="Public Subnet (DMZ)" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5e8d4;startSize=30;" vertex="1" parent="vpc"><mxGeometry x="40" y="50" width="620" height="100" as="geometry" /></mxCell><mxCell id="igw" value="Internet Gateway" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=none;fontStyle=1;" vertex="1" parent="pub"><mxGeometry x="20" y="40" width="120" height="40" as="geometry" /></mxCell><mxCell id="alb" value="App Load Balancer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=none;fontStyle=1;" vertex="1" parent="pub"><mxGeometry x="250" y="40" width="140" height="40" as="geometry" /></mxCell><mxCell id="priv_app" value="Private Subnet (App Layer)" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e1d5e7;startSize=30;" vertex="1" parent="vpc"><mxGeometry x="40" y="180" width="620" height="100" as="geometry" /></mxCell><mxCell id="ec2" value="EC2 Instances (No Internet Access)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=none;fontStyle=1;" vertex="1" parent="priv_app"><mxGeometry x="200" y="40" width="240" height="40" as="geometry" /></mxCell><mxCell id="priv_data" value="Private Subnet (Data Layer)" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;startSize=30;" vertex="1" parent="vpc"><mxGeometry x="40" y="310" width="620" height="100" as="geometry" /></mxCell><mxCell id="rds" value="RDS &amp; Redis (Isolated)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=none;fontStyle=1;" vertex="1" parent="priv_data"><mxGeometry x="200" y="40" width="240" height="40" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

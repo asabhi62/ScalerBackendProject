@@ -1,0 +1,87 @@
+<mxfile host="app.diagrams.net" modified="2023-10-26T00:00:00.000Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="WzX" version="21.7.5" type="device">
+  <diagram id="tech-stack" name="Technology Stack">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="springboot" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#666666;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="springboot_title" value="Spring Boot" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;fontColor=#9673a6;" vertex="1" parent="springboot">
+          <mxGeometry x="0" y="10" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="springboot_desc" value="Framework for building Java applications. Provides Dependency Injection, MVC, and auto-configuration." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="springboot">
+          <mxGeometry x="10" y="45" width="180" height="85" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="mysql" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#666666;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="40" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="mysql_title" value="MySQL" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;fontColor=#6c8ebf;" vertex="1" parent="mysql">
+          <mxGeometry x="0" y="10" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mysql_desc" value="Relational Database Management System (RDBMS). Stores structured data with ACID compliance." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="mysql">
+          <mxGeometry x="10" y="45" width="180" height="85" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="kafka" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="40" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="kafka_title" value="Apache Kafka" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;fontColor=#000000;" vertex="1" parent="kafka">
+          <mxGeometry x="0" y="10" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kafka_desc" value="Distributed Event Streaming Platform. Handles high-throughput, real-time data feeds." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="kafka">
+          <mxGeometry x="10" y="45" width="180" height="85" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="redis" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#666666;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="260" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="redis_title" value="Redis" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;fontColor=#b85450;" vertex="1" parent="redis">
+          <mxGeometry x="0" y="10" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="redis_desc" value="In-memory Data Structure Store. Used as a database, cache, and message broker." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="redis">
+          <mxGeometry x="10" y="45" width="180" height="85" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="aws" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#666666;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="260" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="aws_title" value="AWS Cloud" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;fontColor=#d6b656;" vertex="1" parent="aws">
+          <mxGeometry x="0" y="10" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aws_desc" value="Cloud Computing Platform. Provides EC2, RDS, S3, and other managed services." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="aws">
+          <mxGeometry x="10" y="45" width="180" height="85" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="docker" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#666666;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="260" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="docker_title" value="Docker" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;fontColor=#82b366;" vertex="1" parent="docker">
+          <mxGeometry x="0" y="10" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="docker_desc" value="Platform for developing, shipping, and running applications in containers." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="docker">
+          <mxGeometry x="10" y="45" width="180" height="85" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rel_springboot_mysql" value="Persists Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;exitX=0.5;exitY=1;dashed=1;" edge="1" parent="1" source="springboot" target="mysql">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rel_springboot_redis" value="Caches Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;exitX=0.5;exitY=1;dashed=1;" edge="1" parent="1" source="springboot" target="redis">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rel_springboot_kafka" value="Publishes Events" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;exitX=0.5;exitY=1;dashed=1;" edge="1" parent="1" source="springboot" target="kafka">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rel_docker_aws" value="Deployed On" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;exitX=0.5;exitY=1;dashed=1;" edge="1" parent="1" source="docker" target="aws">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
